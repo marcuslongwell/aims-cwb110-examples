@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reference Paths</title>
+</head>
+<body>
+
+  <h1>Reference Paths</h1>
+  <p>When linking content or anchors in HTML, you should always consider the pathing of your references.</p>
+
+  <h2>Absolute Pathing</h2>
+  <p>When you use an absolute path, you're telling the browser to simply look up a web page or (image) file at the absolutely specified address.</p>
+
+  <p>For example, <a href="https://bing.com">this is an absolutely-pathed link</a>.</p>
+  <p>And here's an absolutely-pathed image:</p>
+  <img src="https://pbs.twimg.com/profile_images/378800000382537738/cc5e3a710d795d8e530ce47a9b50d195_400x400.jpeg" alt="walking aardvark" title="a walking aardvark" />
+
+  <h2>Relative Paths</h2>
+  <p>When you're linking to media or other pages in your own site, you should use relative pathing. Relative pathing tells the browser to look for a page or file <em>relative</em> to the page that the user is currently viewing.</p>
+
+  <p>For example, <a href="./images.html">this is a relatively-pathed link</a> to the images page.</p>
+  <p>If your page lives in a folder, specify the folder it lives in before the file name <a href="./other-pages/page-three.html">like this</a>.</p>
+
+  <p>Here's an example of a relatively-pathed image:</p>
+  <img src="./assets/images/aardvark.jpeg" alt="walking aardvark" title="a walking aardvark" />
+
+  <h2>What's With the Dots?</h2>
+  <p>In relative pathing, the dots are used to indicate which folder a file lives in. See the table below for some examples of the usage when traversing up directories with dots.</p>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Path</th>
+        <th>Browser's Understanding</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>./some-page.html</td>
+        <td>Open a file that is in this same folder called "some-page.html"</td>
+      </tr>
+      <tr>
+        <td>../another-page.html</td>
+        <td>Open a file that is in this up one directory called "another-page.html"</td>
+      </tr>
+      <tr>
+        <td>../../some-folder/my-page.html</td>
+        <td>Go up two directories, then down into a directory called "some-folder" and open the file there called "another-page.html"</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
