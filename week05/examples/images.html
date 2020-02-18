@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Images</title>
+</head>
+<body>
+
+  <h1>Images</h1>
+  <p>The <strong>img</strong> tag is used to display images in the browser.</p>
+  
+  <div>
+    <img src="https://66.media.tumblr.com/d2dd4d49af8e0801b1f71e93586633b7/tumblr_inline_p7g148UIv01r3vmpo_400.jpg" />
+  </div>
+
+  <div>
+    <img src="https://pbs.twimg.com/profile_images/722872527266062336/0sDIc07K_400x400.jpg" />
+  </div>
+
+  <h2>Attributes</h2>
+  <p>At minimum, you must have a <strong>src</strong> attribute on all images. However, there are a few other attributes to consider as well:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>src</td>
+        <td>Specifies the hypertext reference for the image</td>
+      </tr>
+      <tr>
+        <td>alt</td>
+        <td>Describes the image for the user in the event that the image cannot load</td>
+      </tr>
+      <tr>
+        <td>title</td>
+        <td>Titles the image for accessibility &amp; SEO</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3><em>alt</em> Attribute</h3>
+  <p>The alt attribute should always be included in case your image can't load. Consider the following two images:</p>
+
+  <img src="https://pbs.twimg.com/profile_images/378800000382537738/cc5e3a710d795d8e530ce47a9b50d195_400x400.jpeg" alt="walking aardvark" />
+  <img src="https://pbs.twimg.com/profile_images/non-existent-image.jpeg" alt="walking aardvark" />
+
+  <p>Notice how the second image, which doesn't actually exist, shows alternative text in place of the image when it fails to load.</p>
+
+  <h3><em>title</em> Attribute</h3>
+  <p>The title attribute should always be included to describe the image for accessibility and SEO purposes. Since blind people cannot see your image, for example, the title attribute helps describe to them what they would be seeing in a standard browser.</p>
+
+  <img src="https://pbs.twimg.com/profile_images/3751492758/05637cb8fcc03cd98f91f3a569ced83c_400x400.jpeg" alt="walking aardvar" title="an aardvark walking across a rocky landscape" />
+
+  <p>Furthermore, you can hover over the image to get more information about it even in a regular browser.</p>
+  
+  <h3><em>width/height</em> Attributes</h3>
+  <p>The width and height attributes can restrict the size of your image. Be careful, though, if you don't maintain the aspect ratio of the image, your image will be distorted!</p>
+
+  <p>An image without any sizing attributes:</p>
+  <img src="https://www.thoughtco.com/thmb/puLXZFn_Y8RfZATvpf8cQKa-Jdo=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/kenya--masai-mara-game-reserve--aardvark--orycteropus-afer--154773750-5ab00f47a9d4f90037e6ad38.jpg" />
+
+  <p>An image <em>with</em> sizing attributes:</p>
+  <img src="https://www.thoughtco.com/thmb/puLXZFn_Y8RfZATvpf8cQKa-Jdo=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/kenya--masai-mara-game-reserve--aardvark--orycteropus-afer--154773750-5ab00f47a9d4f90037e6ad38.jpg" width="200" />
+
+  <p>An image with both width and height that does not maintain aspect ratio:</p>
+  <img src="https://www.thoughtco.com/thmb/puLXZFn_Y8RfZATvpf8cQKa-Jdo=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/kenya--masai-mara-game-reserve--aardvark--orycteropus-afer--154773750-5ab00f47a9d4f90037e6ad38.jpg" width="200" height="200" />
+
+</body>
+</html>
