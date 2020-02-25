@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Videos</title>
+</head>
+<body>
+
+  <h1>Videos</h1>
+  <p>The <strong>&lt;video&gt;</strong> tag can be used to embed a video in a web page. It expects a child or children <strong>&lt;source&gt;</strong> tags.</p>
+  <p>Here's a basic video with controls:</p>
+
+  <video controls="controls">
+    <source src="./assets/videos/rocket-league.mp4" type="video/mp4" />
+  </video>
+
+  <h2>Video Size</h2>
+  <p>The <strong>width</strong> and <strong>height</strong> attributes can control the size of the player.</p>
+
+  <video controls="controls" width="200" height="150">
+    <source src="./assets/videos/rocket-league.mp4" type="video/mp4" />
+  </video>
+
+  <p>Just like with &lt;img&gt; tags, you should normally only specify one or the other unless you know the aspect ratio of your video.</p>
+
+  <h2>Video Autoplay, Muting, &amp; Looping</h2>
+  <p>The <strong>autoplay</strong> and <strong>loop</strong> attributes can enable you to play a video automatically whent the page loads, and have it
+  loop back to the start when it ends, respectively. The <strong>muted</strong> attribute sets the video sound to muted by default. <em>Note: many browsers block autoplay by default unless you enable it in your browser settings. Most browsers will not autoplay unless you also have the video muted by default.</em></p>
+
+  <video controls="controls" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="./assets/videos/rocket-league.mp4" type="video/mp4" />
+  </video>
+
+  <h2>Multiple Sources</h2>
+  <p>It is alwasy recommended, if possible, to use multiple <strong>&lt;source&gt;</strong> tags within your <strong>&lt;video&gt;</strong> tags.
+  That way, if the browser cannot play a type of file, you can always default it to one that it can play.</p>
+  <p>For example, this file may not play in some browsers:</p>
+
+  <video width="400" controls="controls" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://tutorialehtml.com/assets_tutorials/media/Shaun-the-Sheep-The-Movie-Official-Trailer.ogg" type="video/ogg" />
+  </video>
+
+  <p>But, if I add a fallback source with an MP4 file, browsers that know how to parse video/mp4 can still play it, while browsers that prefer video/ogg will use the ogg file:</p>
+
+  <video width="400" controls="controls" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://tutorialehtml.com/assets_tutorials/media/Shaun-the-Sheep-The-Movie-Official-Trailer.ogg" type="video/ogg" />
+    <source src="https://tutorialehtml.com/assets_tutorials/media/Shaun-the-Sheep-The-Movie-Official-Trailer.mp4" type="video/mp4" />
+  </video>
+
+  <h2>The <em>type</em> Attribute</h2>
+  <p>The type attribute is an important attribute in your <strong>&lt;source&gt;</strong> tags. It specifies the type of file that the browser should
+  be expecting, and helps the browser determine which of your sources to play.</p>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>File Format</th>
+        <th>MIME-Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MP4</td>
+        <td>video/mp4</td>
+      </tr>
+      <tr>
+        <td>WebM</td>
+        <td>video/webm</td>
+      </tr>
+      <tr>
+        <td>Ogg</td>
+        <td>video/ogg</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
