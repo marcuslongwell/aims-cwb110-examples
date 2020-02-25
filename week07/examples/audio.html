@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audio</title>
+</head>
+<body>
+
+  <h1>Audio</h1>
+  <p>The <strong>&lt;audio&gt;</strong> tag can be used to embed audio into a web page. It expects a child or children <strong>&lt;source&gt;</strong> tags.</p>
+  <p>Here's a basic audio with controls:</p>
+
+  <audio controls="controls">
+    <source src="./assets/audio/all-your-base.mp3" type="audio/mpeg" />
+  </audio>
+
+  <h2>Audio Autoplay, Muting, &amp; Looping</h2>
+  <p>The <strong>autoplay</strong> and <strong>loop</strong> attributes can enable you to play a audio automatically whent the page loads, and have it
+  loop back to the start when it ends, respectively. The <strong>muted</strong> attribute sets the audio sound to muted by default. <em>Note: some browsers ignore the autoplay attribute, as it is considered bad practice.</em></p>
+
+  <audio controls="controls" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="./assets/audio/all-your-base.mp3" type="audio/mpeg" />
+  </audio>
+
+  <h2>Multiple Sources</h2>
+  <p>It is alwasy recommended, if possible, to use multiple <strong>&lt;source&gt;</strong> tags within your <strong>&lt;audio&gt;</strong> tags.
+  That way, if the browser cannot play a type of file, you can always default it to one that it can play.</p>
+  <p>For example, this file may not play in some browsers:</p>
+
+  <audio controls="controls">
+    <source src="./assets/audio/all-your-base.ogg" type="audio/ogg" />
+  </audio>
+
+  <p>But, if I add a fallback source with an MP3 file, browsers that know how to parse audio/mpeg can still play it, while browsers that prefer audio/ogg will use the ogg file:</p>
+
+  <audio controls="controls">
+    <source src="./assets/audio/all-your-base.ogg" type="audio/ogg" />
+    <source src="./assets/audio/all-your-base.mp3" type="audio/mpeg" />
+  </audio>
+
+  <h2>The <em>type</em> Attribute</h2>
+  <p>The type attribute is an important attribute in your <strong>&lt;source&gt;</strong> tags. It specifies the type of file that the browser should
+  be expecting, and helps the browser determine which of your sources to play.</p>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>File Format</th>
+        <th>MIME-Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MP3</td>
+        <td>audio/mpeg</td>
+      </tr>
+      <tr>
+        <td>WAV</td>
+        <td>audio/wav</td>
+      </tr>
+      <tr>
+        <td>OGG</td>
+        <td>audio/ogg</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
