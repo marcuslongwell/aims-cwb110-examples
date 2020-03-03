@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Viewport Meta Tag</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Basic description of the viewport meta tag" />
+  <meta name="keywords" content="html,viewport,meta,tag" />
+  <meta name="author" content="Marcus Longwell" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+  <h1>The Viewport Meta Tag</h1>
+  <p>Below is a bunch of lorem ipsum text (nonsense text for the sake of testing what your page will look like) and some images.
+    On a full-screen browser, this text looks great. It's readable and takes and appropriate size on the screen.
+  </p>
+  <p>However, if you open up the mobile developer tools <a href="https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode" target="_blank">in Firefox</a>, 
+    you'll notice that the text looks incredibly small on this page. That's because this page doesn't have a meta viewport defined.
+  </p>
+
+  <p>This is due to the pixel-density of your screen. In other words, on phones and mobile devices, pixels are a lot smaller
+    compared to your laptop screen. So when you specify pixels for your font sizes and your image sizes, the pixels on a phone
+    that display the text/images are also a lot smaller. We can rectify this with a meta tag!
+  </p>
+
+  <p><a href="./without-viewport.html">Here</a> is an example of the same page, but <strong>without</strong> the meta tag with a viewport name.</p>
+
+  <h2>The Lorem Ipsum Text</h2>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper ex sapien, ac elementum ante facilisis sit amet. Curabitur at mi accumsan, semper massa quis, laoreet leo. Phasellus varius dolor a augue venenatis, quis vulputate enim luctus. Pellentesque ut mollis velit, a consequat erat. Vivamus sit amet egestas mi, in malesuada dolor. Curabitur ultrices massa enim, ac ullamcorper lectus vehicula in. Duis luctus erat non ligula feugiat, a viverra elit bibendum. Pellentesque nec sodales enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse placerat fermentum dapibus. Mauris faucibus finibus nibh, ac finibus magna euismod sit amet. Nulla molestie id orci in elementum. Vivamus porta, metus ac egestas pharetra, velit nunc facilisis ex, eget dictum purus ipsum ut nibh.</p>
+  <p>Nam auctor aliquet augue, sit amet consequat justo lobortis dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vestibulum sapien vitae luctus scelerisque. Fusce laoreet lorem lectus, vitae varius odio porta quis. Vestibulum id arcu ultrices, varius magna ac, molestie enim. Donec vitae lectus in justo mattis scelerisque ut facilisis metus. Proin erat mi, elementum sed eros quis, facilisis facilisis ante. Quisque sollicitudin dictum mi eu ullamcorper. In pharetra felis tellus, et blandit velit dapibus ut. Duis vulputate tristique mi quis tristique. Sed posuere justo sem, in eleifend diam porttitor porttitor. Integer vel magna mattis, tincidunt purus in, pharetra mi. Aliquam id sem a nibh dapibus vestibulum. Pellentesque pharetra eleifend sapien, ac facilisis nisi placerat id. Integer vel aliquet ipsum, id rutrum massa.</p>
+  <img src="./assets/images/aardvark.jpg" title="aardvark" alt="image of an aardvark" width="100" />
+  <p>Sed sed pellentesque diam. Sed vehicula arcu ac vulputate rhoncus. Proin leo elit, maximus sit amet leo eget, finibus luctus ante. Integer rhoncus turpis nec volutpat efficitur. Aenean odio lectus, tristique a sem dignissim, dictum fringilla ipsum. Donec et aliquam risus, non molestie diam. Praesent congue cursus purus vel porta. Pellentesque dictum ipsum et eros lobortis, sit amet luctus erat ultricies. Duis vehicula, nisl et malesuada hendrerit, velit metus imperdiet nulla, in mattis quam tortor vitae lacus.</p>
+  <p>Nullam placerat faucibus dolor vitae hendrerit. Duis sem eros, consequat at metus sit amet, condimentum consectetur dolor. Etiam volutpat porttitor risus, a ullamcorper mauris commodo vel. Praesent consectetur fermentum pretium. Sed ut vehicula tortor. Phasellus pellentesque diam non nibh egestas, in pellentesque sem placerat. Curabitur ac libero eros. Duis vehicula tincidunt diam non hendrerit. Nulla pulvinar vel lectus vitae bibendum. Mauris vulputate scelerisque urna. Morbi imperdiet, quam nec tincidunt convallis, mauris tortor porta tortor, in placerat velit lectus in leo. Donec egestas libero a magna dignissim auctor. Pellentesque dolor justo, interdum a luctus a, pretium vel lectus. Mauris sit amet sapien lobortis, vehicula arcu quis, elementum est. Sed consequat venenatis felis, a iaculis lectus varius id.</p>
+  <p>Duis lobortis euismod mi, non tincidunt neque molestie ut. Maecenas dui tellus, vestibulum porta orci at, dictum malesuada velit. Sed commodo, purus vitae efficitur bibendum, tortor massa tempus nisi, ac facilisis nunc leo a justo. Ut pharetra orci diam. Aenean ut nisi consequat, suscipit orci quis, hendrerit mi. Phasellus eu sapien libero. Donec pulvinar sit amet mi eget lobortis. Sed vulputate vehicula nulla, eu sodales risus molestie ac. Duis scelerisque nunc est, at varius nibh tempor vitae. Nulla egestas cursus quam, nec laoreet enim pharetra sit amet. Aenean varius nunc sem. Donec at ex eget felis consequat auctor vel non urna. </p>
+</body>
+</html>
