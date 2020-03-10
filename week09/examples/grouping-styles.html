@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grouping Styles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <h1>Grouping Styles</h1>
+  <p>If you remember a while back, we talked about how, often times, as a web developer, you want to put things in boxes.</p>
+  <p>At the time, it didn't make much sense. But luckily for us, now we can use those groups.</p>
+
+  <div style="padding: 10px; background-color: #000000; color: white;">
+    <p>I'm in a black box with some padding.</p>
+    <p>I'm another paragraph in the same black box with some padding</p>
+    <p>Notice that all of this text is white, even though these paragraphs don't have any styles on them.</p>
+    <p>The reason they don't have to have styles on them is because they're grouped inside a box (a &lt;div&gt; tag), and the 
+      color style from that div tag cascades down to the paragraph tags.
+    </p>
+  </div>
+
+  <p>But now, if I add another paragraph outside of the box, it no longer has the white text color.</p>
+
+</body>
+</html>
